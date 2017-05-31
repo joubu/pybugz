@@ -86,6 +86,7 @@ _bugz_cmd_modify()
     '(--comment-from= -F)'{--comment-from=,-F}'[add comment from file]:file:_files' \
     '(--duplicate= -d)'{--duplicate=,-d}'[mark bug as a duplicate of bug number]:bug: ' \
     '--fixed[mark bug as RESOLVED, FIXED]' \
+    '--pushed[mark bug as Pushed to Master]' \
     '--help[show help message and exit]' \
     '--invalid[mark bug as RESOLVED, INVALID]' \
     '(--keywords= -k)'{--keywords=,-k}'[list of bugzilla keywords]:keywords: ' \

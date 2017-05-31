@@ -221,6 +221,10 @@ def make_arg_parser():
     modify_parser.add_argument('--fixed',
                                action='store_true',
                                help='mark bug as RESOLVED, FIXED')
+    modify_parser.add_argument('--pushed',
+                               action='store_true',
+                               help='mark bug as Pushed to Master')
+
     modify_parser.add_argument('--invalid',
                                action='store_true',
                                help='mark bug as RESOLVED, INVALID')

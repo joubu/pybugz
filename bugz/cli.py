@@ -522,6 +522,9 @@ def modify(settings):
         params['status'] = 'RESOLVED'
         params['resolution'] = 'INVALID'
 
+    if hasattr(settings, 'pushed'):
+        params['status'] = 'Pushed to Master'
+
     if len(params) < 2:
         raise BugzError('No changes were specified')
     check_auth(settings)
